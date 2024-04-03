@@ -48,8 +48,10 @@
 
     <div id="login_form">
         <form action="#" method="get">
-            아이디 입력 : <input type="text" name="" id=""> <br>
-            패스워드 입력 :<input type="password" name="" id=""> <br>
+            <label for="login_id">
+            아이디 입력 : </label><input type="text" name="login_id" id="login_id" placeholder="아이디"> <br>
+            <label>
+                패스워드 입력 :</label><input type="password" name="" id="" placeholder="비밀번호"> <br>
             전화번호 : <input type="tel" name="" id=""><br>
             숫자 : <input type="number" name="" id=""><br>
             웹주소 : <input type="url" name="" id=""><br>
@@ -68,6 +70,7 @@
             시 : <input type="time" name="" id=""><br>
             범위 : <input type="range" name="" id=""><br>
             색 : <input type="color" name="" id=""><br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="텍스트를 입력해주세요."></textarea>
             <input type="submit" value="로그인 하기">
             <input type="reset" value="양식 초기화">
         </form>
