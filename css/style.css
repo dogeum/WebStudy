@@ -4,7 +4,7 @@ dt{
 }
 div {
     vertical-align: top;
-    display:inline-block;
+    display:block;
     border-top:solid 4px grey;
     border-left:solid 4px grey;
     border-right:solid 4px black;
@@ -27,9 +27,12 @@ div#color{
 }
 div#login_form{
     text-align: center;
+    width: 500px;
+    height: auto;
 }
 div#login_form input{
     display: inline-block;
+    margin: 10px;
 }
 p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
