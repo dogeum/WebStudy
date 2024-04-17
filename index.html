@@ -53,14 +53,14 @@
             <label>
                 패스워드 입력 :</label><input type="password" name="" id="" placeholder="비밀번호"> <br>
             전화번호 : <input type="tel" name="" id=""><br>
-            숫자 : <input type="number" name="" id=""><br>
+            숫자 : <input type="number" name="" id="" value="7" readonly><br>
             웹주소 : <input type="url" name="" id=""><br>
             검색어 : <input type="search" name="" id=""><br>
             이메일 주소 : <input type="email" name="" id=""><br>
             체크박스 : <input type="checkbox" name="" id=""><br>
             라디오 버튼 : <input type="radio" name="" id=""><br>
             파일 첨부 : <input type="file" name="" id=""><br>
-            버튼 : <input type="button" value="나는 버튼입니다."><br>
+            버튼 : <input type="button" value="나는 버튼입니다." onmouseout="alert('나감'), onclick=alert('버튼이 눌렸습니다')"><br>
             <input type="image" src="./src/facebook.png" style="width:100px"><br>
             히든은 보이지 않음<input type="hidden" name="" id=""><br>
             날짜 : <input type="date" name="" id=""><br>
@@ -74,6 +74,113 @@
             <input type="submit" value="로그인 하기">
             <input type="reset" value="양식 초기화">
         </form>
+    </div>
+
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th>가격</th>
+        </tr>
+        <tr>
+            <th>1
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </th>
+        </tr>
+        <tr>
+            <th>2
+                <td>사이다</td>
+                <td>2개</td>
+                <td>1,000원</td>
+            </th>
+        <tr>
+            <th>3
+                <td>탄산수</td>
+                <td>3개</td>
+                <td>1,000원</td>
+            </th>
+        </tr>
+
+    </table>
+
+    table>tr>th*4^tr*3>td*4
+
+    <table style="border: 1px solid gray; text-align: center;">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1개</td>
+                <td>1,500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2개</td>
+                <td rowspan="2">1,000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3개</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>총 금액</td>
+                <td colspan="3">6,500원</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div style="width:600px; text-align:center">
+        <table width="500px" border="2" cellspacing="3">
+            <caption style="color:#74C0FC"; font-weight:bold>제품주문표</caption>
+            <col style="width:10%">
+            <colgroup span="3" style="width:20%; background-color:beige"></colgroup>
+            <col style="width:30%">
+                <tr>
+                    <th scope="col">순번</th>
+                    <th scope="col">품명</th>
+                    <th scope="col">단가</th>
+                    <th scope="col">수량</th>
+                    <th scope="col">비고</th>
+                </tr>
+                <tr>
+                    <td scope="row">1</td>
+                    <td>새우깡</td>
+                    <td>1,300</td>
+                    <td>3</td>
+                    <td rowspan="3">해당없음</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>감자깡</td>
+                    <td>1,300</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>자갈치</td>
+                    <td>1,400</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>합계</td>
+                    <td colspan="4">0000원</td>
+                </tr>
+        </table>
+        <video src="./src/love wins all.mp4" controls></video>
     </div>
 </body>
 </html>
